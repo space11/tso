@@ -2123,7 +2123,7 @@ body.is-mobile {
 /* Video Containe */
 
 .video-container {
-  margin: 2em 0;
+  margin: 2.5em 0;
 
   a {
     border: none;
@@ -2198,7 +2198,7 @@ body.is-mobile {
   }
 
   &__alt {
-    margin-bottom: 3em;
+    margin-bottom: 2.5em;
     &:before {
       content: "";
       display: block;
@@ -2263,7 +2263,7 @@ body.is-mobile {
 /* Gallery */
 
 .gallery {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 
   .glider-contain {
     .glider {
@@ -2290,19 +2290,26 @@ body.is-mobile {
 
   .glider-prev,
   .glider-next {
-    font-size: 1.5rem;
-    background: #eaad76;
+    font-size: 2rem;
+    background: _palette(accent1, bg);
     color: #fff;
     margin-top: 1rem;
     width: 3rem;
     height: 3rem;
     line-height: 3rem;
+    border-radius: 50%;
+    display: block;
+
+    &:hover {
+      color:   _palette(accent1, fg-bold);
+    }
+
     @include breakpoint("<=medium") {
       width: 30px;
       height: 30px;
     }
-    border-radius: 50%;
-    display: block;
+
+    
   }
 
   .glider-next {
