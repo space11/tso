@@ -1529,9 +1529,6 @@ button,
 /* Page Wrapper + Menu */
 
 #page-wrapper {
-
-
-
   @include vendor("transition", "opacity #{_duration(menu)} ease");
   opacity: 1;
   padding-top: 3em;
@@ -2171,7 +2168,7 @@ body.is-mobile {
     content: "";
     display: block;
     margin: 0 auto;
-    border: solid goldenrod;
+    border: solid _palette(accent1, fg-bold);
     border-width: 6px 6px 0 6px;
     width: 60px;
     height: 60px;
@@ -2180,13 +2177,17 @@ body.is-mobile {
       width: 30px;
       height: 30px;
     }
+
+    @include breakpoint("<=small") {
+      display: none;
+    }
   }
 
   &:after {
     content: "";
     display: block;
     margin: 0 auto;
-    border: solid goldenrod;
+    border: solid _palette(accent1, fg-bold);
     border-width: 0 6px 6px 6px;
     width: 60px;
     height: 60px;
@@ -2194,6 +2195,10 @@ body.is-mobile {
     @include breakpoint("<=medium") {
       width: 30px;
       height: 30px;
+    }
+
+    @include breakpoint("<=small") {
+      display: none;
     }
   }
 
@@ -2203,7 +2208,7 @@ body.is-mobile {
       content: "";
       display: block;
       margin: 0 auto;
-      border: solid #f3cfaf;
+      border: solid _palette(accent2, bg);
       border-width: 6px 6px 0 6px;
       width: 60px;
       height: 60px;
@@ -2212,13 +2217,17 @@ body.is-mobile {
         width: 30px;
         height: 30px;
       }
+
+      @include breakpoint("<=small") {
+        display: none;
+      }
     }
 
     &:after {
       content: "";
       display: block;
       margin: 0 auto;
-      border: solid #f3cfaf;
+      border: solid _palette(accent2, bg);
       border-width: 0 6px 6px 6px;
       width: 60px;
       height: 60px;
@@ -2226,6 +2235,10 @@ body.is-mobile {
       @include breakpoint("<=medium") {
         width: 30px;
         height: 30px;
+      }
+
+      @include breakpoint("<=small") {
+        display: none;
       }
     }
   }
@@ -2301,15 +2314,13 @@ body.is-mobile {
     display: block;
 
     &:hover {
-      color:   _palette(accent1, fg-bold);
+      color: _palette(accent1, fg-bold);
     }
 
     @include breakpoint("<=medium") {
       width: 30px;
       height: 30px;
     }
-
-    
   }
 
   .glider-next {
