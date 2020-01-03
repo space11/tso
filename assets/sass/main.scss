@@ -4,7 +4,6 @@
 @import "libs/vendor";
 @import "libs/breakpoints";
 @import "libs/html-grid";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
 /*
 	Spectral by HTML5 UP
@@ -516,15 +515,15 @@ header {
   }
 
   &-facebook {
-    background-image: url"images/social/facebook-1.svg");
+    background-image: url("../../images/social/facebook-1.svg");
   }
 
   &-twitter {
-    background-image: url("images/social/twitter-1.svg");
+    background-image: url("../../images/social/twitter-1.svg");
   }
 
   &-instagram {
-    background-image: url("images/social/instagram-11.svg");
+    background-image: url("../../images/social/instagram-11.svg");
   }
 }
 
