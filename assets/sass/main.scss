@@ -2120,7 +2120,7 @@ body.is-mobile {
 /* Video Containe */
 
 .video-container {
-  margin: 2.5em 0;
+  margin: 2.5em 0 5em;
 
   a {
     border: none;
@@ -2353,5 +2353,26 @@ body.is-mobile {
     @include breakpoint("<=medium") {
       display: none;
     }
+  }
+}
+
+/* Testimonials */
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+
+  > p {
+    font-family: Raleway;
+    font-size: 1.3em;
+    text-align: center;
+    color: rgba(#fff, 0.6);
+  }
+
+  > span {
+    display: inline-block;
+    font-family: Cabin;
+    color: _palette(accent1, fg-bold);
+    font-size: 6em;
   }
 }
