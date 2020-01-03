@@ -2127,10 +2127,8 @@ body.is-mobile {
   }
 
   img {
-    // @include breakpoint("<=medium") {
-      width: 100%;
-      height: auto;
-    // }
+    width: 100%;
+    height: auto;
   }
 }
 
